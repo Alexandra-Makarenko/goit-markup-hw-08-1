@@ -1,0 +1,115 @@
+.footer{
+  
+    background-color: $footer-color;
+   
+}
+.logo__web--footer{
+    color: $main-color;
+    margin-bottom: 20px;
+}
+.footer__address{
+    margin-top: 20px;
+    @media screen and (max-width:1199px){
+     margin-bottom: 60px;
+    }
+       @media screen and (min-width:1200px){
+        margin-right: 70px;        
+    }
+   
+}
+.footer__link{
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,&:focus{
+        color: $accent-color;
+    }
+}
+.footer__link--address {
+    color: $main-color;
+}
+.footer__item:not(:last-child){
+        margin-bottom: 9px;
+}
+.footer__container{
+    display: block;
+    @media screen and (min-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    }    
+    @media screen and (max-width:1199px){
+        justify-content: center;
+    }
+    @media screen and (min-width:1200px){
+        flex-wrap: nowrap;
+    }
+}
+.join{
+    @media screen and (min-width:768px){
+        margin-left: 165px;
+    }
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        }
+    
+}
+.join__title{
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: $main-color;
+    margin-bottom: 20px;
+}
+
+.social__link--footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social__icon--footer{
+    fill: $main-color;    
+}
+.button--footer{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width:1200px) {
+        display: inline-flex;
+    }
+}
+.follow{
+    @media screen and (max-width:1199px){
+    margin: 0 auto;
+    }    
+    @media screen and (min-width:1200px){
+        margin-left: auto;
+    }
+  }
+.follow__input{
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+    margin-right: 12px;
+    &::placeholder{
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        
+        color: rgba(255, 255, 255, 0.6);
+    }
+    @media screen and (max-width:1199px){
+        margin-bottom: 20px;
+    }
+}
+.social__icon--follow{
+    margin-left: 10px;
+}
